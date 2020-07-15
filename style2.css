@@ -1,0 +1,62 @@
+body {
+  text-align: center;
+  background-color: white;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color:black;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.olivia {
+  background-color: purple;
+  background-image: url(https://cdn.discordapp.com/attachments/733000205179420722/733013935334096937/Annotation_2020-07-15_133447.png);
+  background-size: cover;
+}
+
+.zoe {
+  background-color: green;
+  background-image: url(https://cdn.discordapp.com/attachments/733000205179420722/733014415456207008/Annotation_2020-07-15_133720.png);
+  background-size: cover;
+
+}
+
+.peyton {
+  background-color: blue;
+  background-image: url(https://cdn.discordapp.com/attachments/733000205179420722/733014290428330130/Annotation_2020-07-15_133651.png);
+  background-size: 100%;
+}
+
+.leslie {
+  background-color: pink;
+  background-image: url(https://cdn.discordapp.com/attachments/733000205179420722/733014168940183713/Annotation_2020-07-15_133621.png);
+  background-size: 100%;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
