@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Simon</title>
     <link href="style2.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <audio id="soundzoe"> <source src="./sounds/green.mp3">
+    </audio>
+    <audio id="soundolivia"> <source src="./sounds/red.mp3">
+    </audio>
+    <audio id="soundleslie"> <source src="./sounds/yellow.mp3">
+    </audio>
+    <audio id="soundpeyton"> <source src="./sounds/blue.mp3">
+    </audio>
+    <audio id="soundwrong"> <source src="./sounds/wrong.mp3">
+    </audio>
+    </audio>
   </head>
-<body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div class="row">
-
-      <div type="button" id="zoe" class="btn zoe">
-
-      </div>
-
-      <div type="button" id="olivia" class="btn olivia">
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div type="button" id="leslie" class="btn leslie">
-      </div>
-      <div type="button" id="peyton" class="btn peyton">
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
 
   <body>
-    <script src="script.js"></script>
-  </body>
+    <div id="outer-square">
+      <div id="zoe"></div>
+      <div id="olivia"></div>
+      <div id="leslie"></div>
+      <div id="peyton"></div>
+      <div id="inner-circle">
+        <div id="title">SIMON!</div>
+        <div id="control-panel">
+          <input type="checkbox" class="toggle" id="on">
+          <button class="button" id="start">Start</button>
+          <input type="checkbox" class="toggle" id="strict">
+        </div>
+        <div class="text1">
+          <span>POWER</span><span>STRICT</span>
+        </div>
+        <div id="turn"></div>
+        <div class="text2">
+          COUNT
+        </div>
+      </div>
+    </div>
+
+      <script src="scripts.js"></script>
+    </body>
+
 </html>
