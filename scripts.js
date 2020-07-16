@@ -30,8 +30,6 @@ strictButton.addEventListener('click', (event) => {
   } else {
     strict = false;
   }
-  console.log("checked");
-
 });
 
 
@@ -48,8 +46,7 @@ if (onButton.checked == true) {
   turnCounter.innerHTMl = "";
   clearColor();
   clearInterval(intervalId);
-}
-console.log("checked");
+  }
 });
 
 startButton.addEventListener('click', (event) => {
@@ -81,7 +78,7 @@ function play() {
 }
 
 
-function gameTurn () {
+function gameTurn() {
   on = false;
 
   if (flash == turn) {
@@ -90,7 +87,6 @@ function gameTurn () {
     clearColor();
     on = true;
   }
-}
 
 
   if (compTurn) {
@@ -103,14 +99,14 @@ function gameTurn () {
       flash++;
     }, 200);
   }
-  console.log("colorTimeout");
+}
 
 ////we reference the video, then audio.play plays the sound
 //.style accesses the style of the top left button, backgroundImage is the image change when function zoef is run
   function zoef() {
     if (noise){
       let audio = document.getElementById("soundzoe");
-      aduio.play();
+      audio.play();
     }
     noise = true;
     document.getElementById("zoe").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
@@ -119,7 +115,7 @@ function gameTurn () {
   function oliviaf() {
     if (noise){
       let audio = document.getElementById("soundolivia");
-      aduio.play();
+      audio.play();
     }
     noise = true;
     document.getElementById("olivia").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
@@ -128,7 +124,7 @@ function gameTurn () {
   function leslief() {
     if (noise){
       let audio = document.getElementById("soundleslie");
-      aduio.play();
+      audio.play();
     }
     noise = true;
     document.getElementById("leslie").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
@@ -136,7 +132,7 @@ function gameTurn () {
   function peytonf() {
     if (noise){
       let audio = document.getElementById("soundpeyton");
-      aduio.play();
+      audio.play();
     }
     noise = true;
     document.getElementById("peyton").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
@@ -217,13 +213,15 @@ function gameTurn () {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
       good = false;
 
-    if (playerOrder.length == 3 && good == true) {
+    if (playerOrder.length == 6 && good == true) {
       winGame();
     }
 
     if (good == false) {
       flashColor();
       turnCounter.innerHTML = "LAME!";
+      let audio = document.getElementById("soundwrong");
+      audio.play();
       setTimeout(() => {
         turnCounter.innerHTML = turn;
         clearColor();
