@@ -109,7 +109,7 @@ function gameTurn() {
       audio.play();
     }
     noise = true;
-    document.getElementById("zoe").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
+    document.getElementById("zoe").style.backgroundImage = "url('cat.jpg')";
   }
 
   function oliviaf() {
@@ -118,7 +118,7 @@ function gameTurn() {
       audio.play();
     }
     noise = true;
-    document.getElementById("olivia").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
+    document.getElementById("olivia").style.backgroundImage = "url('horse.jpg')";
   }
 
   function leslief() {
@@ -127,7 +127,7 @@ function gameTurn() {
       audio.play();
     }
     noise = true;
-    document.getElementById("leslie").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
+    document.getElementById("leslie").style.backgroundImage = "url('goat.jpg')";
   }
   function peytonf() {
     if (noise){
@@ -137,7 +137,7 @@ function gameTurn() {
     noise = true;
     document.getElementById("peyton").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
   }
-// not defined yet!
+//
   function clearColor() {
     document.getElementById("zoe").style.backgroundImage = "url('grouppictureZoe.png')";
     document.getElementById("olivia").style.backgroundImage = "url('grouppictureOlivia.png')";
@@ -146,9 +146,9 @@ function gameTurn() {
   }
 
   function flashColor() {
-    document.getElementById("zoe").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
-    document.getElementById("olivia").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
-    document.getElementById("leslie").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
+    document.getElementById("zoe").style.backgroundImage = "url('cat.jpg')";
+    document.getElementById("olivia").style.backgroundImage = "url('horse.jpg')";
+    document.getElementById("leslie").style.backgroundImage = "url('goat.jpg')";
     document.getElementById("peyton").style.backgroundImage = "url('https://static.bangkokpost.com/media/content/20190530/c1_1686224_190530122737.jpg')";
   }
 
